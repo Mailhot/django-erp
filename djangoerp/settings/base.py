@@ -26,7 +26,8 @@ PROJECT_PATH = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__f
 THEME_PATH = os.path.join(PROJECT_PATH, 'themes', 'default')
 REPORT_PATH = os.path.join(PROJECT_PATH, 'reports', 'default')
 
-DEBUG = os.environ.get('DEBUG')
+#DEBUG = os.environ.get('DEBUG')
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -134,7 +135,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '*7n%@x9c-#f6qn0@(t&7vrx-ddk8fel8fs3xx27wu+dul4rppf'
+#SECRET_KEY = '*7n%@x9c-#f6qn0@(t&7vrx-ddk8fel8fs3xx27wu+dul4rppf'
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 TEMPLATES = [
