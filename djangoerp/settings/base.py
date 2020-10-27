@@ -17,7 +17,7 @@ __version__ = '0.0.5'
 
 import os
 import datetime
-import urllib.parse
+from urllib.parse import urlparse
 from pytz import common_timezones
 from django.utils.translation import ugettext_lazy as _
 
